@@ -68,6 +68,7 @@ const formData = { pizzaName, createdBy, size, toppings };
     })
     .catch(err => {
       console.log(err);
+      saveRecord(formData);
     });
 };
 
